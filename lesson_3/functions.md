@@ -45,4 +45,3 @@ def my_function(argument1, argument2):
     result = argument1 + argument2
     return result
 ```
-
