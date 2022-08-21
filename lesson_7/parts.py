@@ -3,7 +3,7 @@ class Door:
 
     def __init__(self):
         self._is_closed = True
-    
+
     def open(self):
         if self.is_closed():
             self._is_closed = False
@@ -22,19 +22,20 @@ class Door:
     def is_closed(self):
         return self._is_closed
 
+
 class Tire:
 
     def __init__(self, wear_level=46000):
         if wear_level <= 0:
             raise ValueError("Wear level must be a positive value")
         self._wear_level = wear_level
-    
+
     def distance_before_worn(self):
         return self._wear_level
-    
+
     def is_worn_out(self):
         return self._wear_level <= 0
-    
+
     def needs_replacement(self):
         return self._wear_level < 500
 
@@ -48,6 +49,7 @@ class Tire:
             raise RuntimeError("Tire blown!")
         else:
             self._wear_level = self._wear_level - distance
+
 
 class Engine:
 
@@ -65,10 +67,10 @@ class Engine:
             raise RuntimeError("This engine cannot hold this amount of fuel")
         else:
             self._fuel_amount = self._fuel_amount + amount
-    
+
     def amount_needed(self):
         return self._fuel_capacity - self._fuel_amount
-    
+
     def can_drive(self, distance):
         return self._fuel_amount - distance > 0
 

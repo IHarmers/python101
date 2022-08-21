@@ -1,7 +1,7 @@
 # Installing Python
 
 You will need to install some software before you start programming in Python. At first you need
-to install the Python interpreter itself. The you will need an editor to write your Python files
+to install the Python interpreter itself. Then you will need an editor to write your Python files
 with.
 
 ## Installing Python

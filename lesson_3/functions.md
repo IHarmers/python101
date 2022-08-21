@@ -1,4 +1,5 @@
 # Functions
+
 You sometimes have pieces of code which you need multiple times (often with small variations).
 It is often wise to put these pieces of code in a function.
 
@@ -16,7 +17,7 @@ The arguments are input for the function. The results of the function are given 
 to the function caller by using the **return** statement. All variables which are
 declared in the function can only be used within the function.
 
-The following example demonstrates how to use the function:
+The following example demonstrates how to use a function:
 
 ```Python
 def my_function(argument1, argument2):
@@ -34,7 +35,7 @@ print("The sum of {} and {} is {}".format(first_number, second_number, sum))
 ## Documentation
 
 It is best practice to document your functions so others will know
-how to use it more easily.
+how to use them:
 
 ```Python
 def my_function(argument1, argument2):
@@ -45,3 +46,9 @@ def my_function(argument1, argument2):
     result = argument1 + argument2
     return result
 ```
+
+## Builtin functions
+
+Python has a lot of builtin functions which you can use.
+The `print` function is the best known one. It can be used to
+display text on your screen.

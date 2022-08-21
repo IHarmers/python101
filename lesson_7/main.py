@@ -3,6 +3,7 @@ from fuel import FuelType
 from vehicles import Car, Motorcycle
 from parts import Tire
 
+
 def main():
     station = FuelStation()
     station.add_fuel(FuelType.DIESEL, 100000)
@@ -12,7 +13,7 @@ def main():
     for index in range(100):
         new_tire = Tire()
         garage.add_tire(new_tire)
-    
+
     my_car = Car(FuelType.DIESEL, 800, 5)
     my_motor = Motorcycle(400)
 
@@ -29,10 +30,11 @@ def main():
         print("I filled the tank of my car")
     except RuntimeError as error:
         print("Oops, I made a mistake: {}".format(error))
-    
+
     print("I took my car to the garage for service")
     tires_replaced = garage.service_vehicle(my_car)
     print("They replaced {} of my tires".format(tires_replaced))
+
 
 if __name__ == "__main__":
     main()

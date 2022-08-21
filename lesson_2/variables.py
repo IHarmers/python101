@@ -4,7 +4,7 @@
 # It is recommended to give your variables proper names.
 
 # This variable holds a string. A string is simply a piece of text and
-# is defined between single of double quotes.
+# is defined between single or double quotes.
 street_name = "John Street"
 
 # This variable holds an integer.
@@ -18,10 +18,10 @@ has_doorbell = False
 # the changes to the console output.
 
 print("John lives on {} number {} and has {} doorbell".format(
-        street_name, 
-        street_number, 
-        "yes" if has_doorbell else "no" 
-    )
+    street_name,
+    street_number,
+    "a" if has_doorbell else "no"
+)
 )
 
 # Python also has lists. A list is a collection of separate pieces of data and can be defined by using brackets.
@@ -41,7 +41,7 @@ print("The first item on my list is {}".format(first_item_on_list))
 
 # Python also has a data type called a dictionary. A dictionary contains a
 # set of unique keys which are mapped to values. It can be compared to
-# a real word dictionary. The dictionary contains words (the keys) and
+# a real world dictionary. The dictionary contains words (the keys) and
 # each word is mapped to a definition.
 #
 # Dictionaries can be created with braces.

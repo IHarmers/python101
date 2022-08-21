@@ -1,7 +1,10 @@
-from unittest import TestCase
 import unittest
 
+
 class Counter:
+    '''
+    Simple counter implementation.
+    '''
 
     def __init__(self, initial_count=0):
         '''
@@ -9,7 +12,7 @@ class Counter:
         zero by default.
         '''
         self._count = initial_count
-    
+
     def increase(self):
         '''
         Increase the count by one.
@@ -24,7 +27,7 @@ class Counter:
             self._count = self._count - 1
         else:
             raise RuntimeError("The count cannot be a negative value")
-    
+
     def get_count(self):
         '''
         Get the total count amount.
@@ -32,11 +35,15 @@ class Counter:
         return self._count
 
 
-class TestCounter(TestCase):
+class TestCounter(unittest.TestCase):
+    '''
+    Test case for testing the functionality of
+    the Counter class.
+    '''
 
     def setUp(self):
         '''
-        The method is called before every test case.
+        This function is called before every test case.
         It allows you to initialize the variables you
         need during the test cases.
         '''
@@ -45,7 +52,7 @@ class TestCounter(TestCase):
     def test_increase(self):
         '''
         Tests if counter is increased when the
-        increase method is called. 
+        increase method is called.
         '''
         count_before_inc = self._counter.get_count()
         self._counter.increase()
@@ -74,7 +81,7 @@ class TestCounter(TestCase):
 
     def tearDown(self):
         '''
-        This method is called after every
+        This function is called after every
         test case. It allows you to cleanup.
         '''
         self._counter = None

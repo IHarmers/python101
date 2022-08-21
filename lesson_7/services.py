@@ -3,7 +3,7 @@ class Garage:
 
     def __init__(self):
         self._stock = []
-    
+
     def add_tire(self, tire):
         if tire.needs_replacement():
             raise RuntimeError("This tire is already too worn out")
@@ -19,13 +19,14 @@ class Garage:
             tires_replaced = tires_replaced + 1
         return tires_replaced
 
+
 class FuelStation:
 
     def __init__(self):
         self._fuel = {}
-    
+
     def has_fuel(self, fuel_type):
-        return self._fuel.get(fuel_type, 0) > 0
+        return fuel_type in self._fuel
 
     def _retrieve(self, fuel_type, amount):
         if self.has_fuel(fuel_type):
@@ -43,7 +44,7 @@ class FuelStation:
 
         stored_amount = self._fuel.get(fuel_type, 0)
         self._fuel[fuel_type] = stored_amount + amount
-    
+
     def fill_tank(self, fuel_type, vehicle):
         if vehicle.needs_fuel():
             fuel_needed = vehicle.amount_needed()
