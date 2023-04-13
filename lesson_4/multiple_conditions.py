@@ -1,5 +1,5 @@
 number_one = 3
-number_two = 34  # Try setting this to 30
+number_two = 30  # Try setting this to 30
 
 if number_one < 10 and number_two == 30:
     print("Number one is lower than 10 AND number two is equal to 30")

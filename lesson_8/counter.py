@@ -26,7 +26,7 @@ class Counter:
         if self._count > 0:
             self._count = self._count - 1
         else:
-            raise RuntimeError("The count cannot be a negative value")
+            raise ValueError("The count cannot be a negative value")
 
     def get_count(self):
         '''
@@ -76,7 +76,7 @@ class TestCounter(unittest.TestCase):
         exception when the count is decreased
         below zero.
         '''
-        with self.assertRaises(RuntimeError):
+        with self.assertRaises(ValueError):
             self._counter.decrease()
 
     def tearDown(self):

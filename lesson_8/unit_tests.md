@@ -8,7 +8,7 @@ test other code.
 Python supports Unit Tests by default. Lets take a look at the following 
 example: [counter.py](counter.py). Run the script to see the magic happen.
 
-At first you will have to import the `inittest` modules which contains the `TestCase` class
+At first you will have to import the `unittest` modules which contains the `TestCase` class
 and the `main` function we need to run our test cases. The goal is to make tests for the
 counter class we have created. We define a new class called `TestCounter` and let it
 inherit the functionality of the `TestCase` class.

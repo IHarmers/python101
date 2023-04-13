@@ -21,7 +21,7 @@ Handling sensitive user input (like passwords) is a bit different than regular i
 The [ask_credentials](ask_credentials.py) script demonstrates how it's done.
 
 Your can run the script like this `python3 ask_credentials.py`. The script will then
-prompt you for a password. Access will be denied when you enter the right password and it
+prompt you for a password. Access will be denied when you enter the wrong password and it
 will be granted if you enter the right one.
 
 The asking of the password happens in the *ask_pass* function:
@@ -64,7 +64,7 @@ The script simply shows the contents of supplied file name. I have included a te
 [input.txt](input.txt) in the lesson folder. You can use this file to test the script.
 
 You can run the script with the following command `python3 program_args.py input.txt`. The script
-can also display line numbers if you want. Just append ` --line-numbers` to the end of the previous
+can also display line numbers if you want. Just append ` --line_numbers` to the end of the previous
 command.
 
 Let's break this script down:

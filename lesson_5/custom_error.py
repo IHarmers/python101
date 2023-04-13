@@ -21,7 +21,7 @@ def guess_name(name):
         raise NameError("That's not my name")
 
 
-name = "Robbert"  # Try changing this to a number and see that happens
+name = "Jon"  # Try changing this to a number and see that happens
 
 try:
     print(guess_name(name))

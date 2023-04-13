@@ -4,7 +4,7 @@
 # Execute an operation if certain conditions are met.
 #
 
-happy = False  # Try changing this to True
+happy = True  # Try changing this to True
 
 if happy == True:
     print(":)")
@@ -14,7 +14,7 @@ if happy != True:
 
 # if-else statements
 
-drink = "Water"  # Try changing this to values like: "Beer", "Fanta" or "Fristi"
+drink = "Fanta"  # Try changing this to values like: "Beer", "Fanta" or "Fristi"
 soft_drinks = ["Cola", "Pepsi", "Sprite", "Fanta"]
 
 if drink == "Water":
@@ -35,10 +35,10 @@ else:
 #
 
 # Try setting different numbers for these counters
-current_count = 0
-maximum_count = 30
+current_count = 8
+maximum_count = 10
 
-while current_count < maximum_count:
+while current_count <= maximum_count:
     print("The current count is {}".format(current_count))
     current_count = current_count + 1
 
@@ -48,7 +48,7 @@ while current_count < maximum_count:
 #
 
 # Try adding and removing items from the list
-checklist = ["Clothes", "A tent", "Shoes", "Drinks", "Pizza!"]
+checklist = ["Clothes", "Tent", "Shoes", "Drinks","Marshmellows", "Pizza!"]
 
 print("Things to bring on a camping trip:")
 

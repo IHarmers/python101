@@ -44,7 +44,7 @@ def ask_for_action():
     print("[2] Delete an item")
     print("[3] Save list")
     print("[4] Quit")
-    answer = input("What would you like to do?:")
+    answer = input("What would you like to do?: ")
     action = Action(int(answer))
     return action
 
@@ -118,7 +118,7 @@ def main():
                     print("Error: Quantity must be a number")
         elif action is Action.DELETE:
             item_number_str = input(
-                "What item number would you like to delete:")
+                "What item number would you like to delete: ")
             try:
                 item_number = int(item_number_str)
                 index = item_number - 1

@@ -11,7 +11,7 @@ street_name = "John Street"
 street_number = 61
 
 # This variable holds a Boolean value which can be either True or False
-has_doorbell = False
+has_doorbell = True
 
 # The following line of code shows a line of text on the output console.
 # Try changing the value of the variables above and observe
@@ -25,7 +25,7 @@ print("John lives on {} number {} and has {} doorbell".format(
 )
 
 # Python also has lists. A list is a collection of separate pieces of data and can be defined by using brackets.
-my_shopping_list = ["apple", "milk", "cookies", "toilet paper"]
+my_shopping_list = ["apple", "milk", "cookies", "toilet paper", "walnuts"]
 
 # The following code writes the shopping list as output to the console.
 # Try adding and removing items from the list as see how the output changes.
@@ -45,7 +45,7 @@ print("The first item on my list is {}".format(first_item_on_list))
 # each word is mapped to a definition.
 #
 # Dictionaries can be created with braces.
-my_shopping_list = {"apple": 6, "milk": 1, "cookies": 20, "toilet paper": 3}
+my_shopping_list = {"apple": 6, "milk": 1, "cookies": 20, "toilet paper": 3, "walnuts": 5}
 
 # The following code writes the shopping list as output to the console.
 # Try adding and removing items from the list as see how the output changes.
@@ -54,5 +54,5 @@ for item, quantity in my_shopping_list.items():
     print("- {}: {}".format(item, quantity))
 
 # You can access a specific value in the dictionary by using it's key:
-amount_of_apples = my_shopping_list["apple"]
-print("I have to get {} apples from the shop".format(amount_of_apples))
+amount_of_apples = my_shopping_list["walnuts"]
+print("I have to get {} bags of walnuts from the shop".format(amount_of_apples))
